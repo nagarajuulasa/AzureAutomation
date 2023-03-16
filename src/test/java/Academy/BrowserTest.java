@@ -17,6 +17,9 @@ public class BrowserTest {
 	public void getData()
 	{
 		System.out.println("Hello Guys");
+		ChromeOptions options = new ChromeOptions(); 
+                options.addArguments("--start-maximized"); 
+                driver = new ChromeDriver(); 
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://nagarajuulasa.azurewebsites.net/");
